@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style/style.css">
+  <title>ToDoList</title>
+</head>
+
+<body>
+  <!-- форма авторизации и регистрации -->
+  <div class="container">
+    <!-- подложка  -->
+    <div class="block">
+      <section class="block__item block-item">
+        <h2 class="block-item__title">Авторизация</h2>
+        <button class="block-item__btn signin-btn">
+          Авторизация
+        </button>
+      </section>
+      <section class="block__item block-item">
+        <h2 class="block-item__title">Регистрация</h2>
+        <button class="block-item__btn signup-btn">
+          Регистрация
+        </button>
+      </section>
+    </div>
+    <!-- форма ыхода -->
+    <div class="form-box">
+      <form action="#" class="form form_signin" onsubmit="loginFunc()">
+        <h3 class="form__title">Авторизация</h3>
+        <p>
+          <input type="text" class="form__input" id="username" placeholder="Логин">
+        </p>
+        <p>
+          <input type="password" class="form__input" id="password" placeholder="Пароль">
+        </p>
+        <p>
+          <button class="form__btn" id="login_btn">Войти</button>
+        </p>
+      </form>
+      <!-- форма регистрации -->
+      <form action="#" class="form form_signup" onsubmit="signup()">
+        <h3 class="form__title">Регистрация</h3>
+        <p>
+          <input type="text" class="form__input" id="email" placeholder="Email">
+        </p>
+        <p>
+          <input type="text" class="form__input" id="user_name" placeholder="Логин">
+        </p>
+        <p>
+          <input type="password" class="form__input" id="pass_word" placeholder="Пароль">
+        </p>
+        <p>
+          <button class="form__btn form__btn_signup" id="reg_btn">
+            Зарегистрироваться
+          </button>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script src="autoriz.js"></script>
+</body>
+
+</html>
